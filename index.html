@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RayaLens | Eyewear</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="cabecalho__container">
+            <input type="checkbox" id="menu" class="cabecalho__botao-menu">
+            <label for="menu" class="menu__rotulo">
+                <span class="cabecalho__menu-hamburguer cabecalho__imagem-menu"></span>
+            </label>
+            <ul class="lista-menu">
+                <li class="lista-menu__titulo">Categorias</li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Coleções</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Estilos</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Óculos de grau</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Óculos de sol</a>
+                </li>
+                <li class="lista-menu__item">
+                    <a href="#" class="lista-menu__link">Outlet</a>
+                </li>
+            </ul>
+            <img src="img/logo.jpeg" alt="Logotipo da Raya Lens" class="cabecalho__logo cabecalho__imagem-logo">
+            <h1 class="cabecalho__titulo"><b class="cabecalho__titulo-negrito">Raya</b>Lens</h1>
+        </div>
+        
+            <ul class="cabecalho__opcoes">
+                <input type="checkbox" id="opcoes__menu" class="opcoes__botao">
+                <label for="opcoes__menu" class="opcoes__rotulo">
+                    <li class="opcoes__item">Categorias</li>
+                </label>
+
+                    <ul class="lista-menu">
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">Coleções</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">Estilos</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">Óculos de grau</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">Óculos de sol</a>
+                        </li>
+                        <li class="lista-menu__item">
+                            <a href="#" class="lista-menu__link">Outlet</a>
+                        </li>
+                    </ul>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Favoritos</a></li>
+                <li class="opcoes__item"><a href="#" class="opcoes__link">Minha estante</a></li>
+            </ul>
+        
+        <div class="cabecalho__container">
+            <a href="#">
+                <img src="img/Favoritos.svg" alt="Ícone de favoritos" class="cabecalho__imagem-favoritos">
+            </a>
+            <a href="#" class="cabecalho__link">
+                <img src="img/Compras.svg" alt="Ícone de carrinho de compras" class="cabecalho__imagem-compras">
+                <p class="cabecalho__texto">Minha sacola</p>
+            </a>
+            <a href="#" class="cabecalho__link">
+                <img src="img/Usuário.svg" alt="Ícone de perfil do usuário" class="cabecalho__imagem-perfil">
+                <p class="cabecalho__texto">Meu perfil</p>
+            </a>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+            <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+            <p class="banner__texto">Encontre aqui o modelo que você procura!</p>
+            <input type="search" id="banner" class="banner__pesquisa" placeholder="Qual será sua próxima compra?">
+            <label for="banner"></label>
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Últimos Lançamentos</h2>
+
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/oculos-ysl.jpeg" alt="Óculos de sol Yves Saint Laurent"></div>
+                    <div class="swiper-slide"><img src="img/oculos-miumiu.jpeg" alt="Óculos de sol Miu-Miu"></div>
+                    <div class="swiper-slide"><img src="img/oculos-prada.jpg" alt="Óculos de sol Prada"></div>
+                    <div class="swiper-slide"><img src="img/oculos-fendi.jpeg" alt="Óculos de sol Fendi"></div>
+                    <div class="swiper-slide"><img src="img/oculos-gucci.jpeg" alt="Óculos de sol Gucci"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mk.jpeg" alt="Óculos de sol Michael Kors"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <h3 class="descricao__titulo">Talvez você também se interesse por...</h3>
+                            <h2 class="descricao__titulo-oculos">Óculos de grau Tiffany & Co</h2>
+                            <p class="descricao__texto">Kit completo com armação, lentes, case e flanela!</p>
+                        </div>
+                        <img src="img/oculos-grau-tiffany.jpg" alt="Kit completo de óculos de grau Tiffany & Co" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Ícone de favoritar"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Ícone de um carrinho de compras"></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="carrossel">
+            <h2 class="carrossel__titulo">Mais vendidos</h2>
+
+            <div class="carrossel__container">
+                <!-- Slider main container -->
+                <div class="swiper">
+
+                    <!-- If we need pagination -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-ysl.jpeg" alt="Óculos de sol Yves Saint Laurent"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-miumiu.jpeg" alt="Óculos de sol Miu-Miu"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-prada.jpeg" alt="Óculos de sol Prada"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-prada2.jpeg" alt="Óculos de sol Prada"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-rayban.jpeg" alt="Óculos de sol Ray-ban"></div>
+                    <div class="swiper-slide"><img src="img/oculos-mais-vendido-rayban2.jpeg" alt="Óculos de sol Ray-ban"></div>
+                    </div>
+                
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                
+                </div>
+            
+                <div class="card">
+                    <div class="card__descricao">
+                        <div class="descricao">
+                            <img src="img/Estrelinhas.svg" alt="Ícone de cinco estrelas" class="descricao__imagem-estrelas">
+                            <h3 class="descricao__titulo">Destaque do mês</h3>
+                            <h2 class="descricao__titulo-oculos">Óculos de sol Prada Symbole</h2>
+                            <p class="descricao__texto">O acabamento tridimensional nas hastes é uma interpretação iconográfica do logotipo triangular tradicional da Prada.</p>
+                        </div>
+                        <img src="img/destaque-prada.jpeg" alt="Modelo com óculos de sol da Prada" class="descricao__imagem">
+                    </div>
+                    <div class="card__botoes">
+                        <ul class="botoes">
+                            <li class="botoes__item"><img src="img/Favoritos.svg" alt="Ícone de favoritar"></li>
+                            <li class="botoes__item"><img src="img/Compras.svg" alt="Ícone de um carrinho de compras"></li>
+                        </ul>
+                        <a href="#" class="botoes__ancora">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="topicos">
+            <h3 class="topicos__titulo">Tópicos visitados recentemente</h3>
+            <ul class="topicos__lista">
+                <li class="topicos__item"><a href="#" class="topicos__link">Summer Editions</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Prada</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Versace</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Miu-Miu</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Ray-Ban</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Preview Summer Sale</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Saint Laurent</a></li>
+                <li class="topicos__item"><a href="#" class="topicos__link">Lançamentos</a></li>
+            </ul>
+        </section>
+
+        <section class="contato">
+            <div class="contato__container">
+                <h2 class="contato__titulo">Fique por dentro das novidades!</h2>
+                <p class="contato__texto">Fique por dentro das novidades, promoções e receba cupons de desconto exclusivos.</p>
+            </div>
+            <input type="email" id="email" class="contato__email" placeholder="Cadastre seu e-mail">
+            <label for="email"></label>
+        </section>
+
+        <hr />
+
+        <footer class="rodape">
+            <h2 class="rodape__titulo">Grupo RayaLens</h2>
+            <ul class="rodape__lista">
+                <li class="rodape__lista-titulo">Institucional</li>
+                <li class="rodape__lista-item">
+                    <img src="img/empresa.png" alt="Ícone de uma empresa" class="rodape__imagem">
+                    <a class="rodape__lista-link">Quem somos</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/lojas.png" alt="Ícone de localização de uma loja" class="rodape__imagem">
+                    <a class="rodape__lista-link">Nossas lojas</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/regulamentos.png" alt="Ícone de um regulamento" class="rodape__imagem">
+                    <a class="rodape__lista-link">Regulamentos</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/franquia.png" alt="Ícone de uma franquia" class="rodape__imagem">
+                    <a class="rodape__lista-link">Seja um franqueado</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/fale.png" alt="Ícone de fale conosco" class="rodape__imagem">
+                    <a class="rodape__lista-link">Fale conosco</a>
+                </li>
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__lista-titulo">Atendimento ao cliente</li>
+                <li class="rodape__lista-item">
+                    <img src="img/entrega.png" alt="Ícone de políticas de entrega" class="rodape__imagem">
+                    <a class="rodape__lista-link">Política de entrega</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/privacidade.png" alt="Ícone de políticas de privacidade" class="rodape__imagem">
+                    <a class="rodape__lista-link">Política de privacidade</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/pagamento.png" alt="Ícone de formas de pagamento" class="rodape__imagem">
+                    <a class="rodape__lista-link">Política de pagamento</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/troca.png" alt="Ícone de trocas e devoluções" class="rodape__imagem">
+                    <a class="rodape__lista-link">Trocas e devoluções</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/garantia.png" alt="Ícone de garantia" class="rodape__imagem">
+                    <a class="rodape__lista-link">Garantia</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/duvidas.png" alt="Ícone de dúvidas" class="rodape__imagem">
+                    <a class="rodape__lista-link">Dúvidas frequentes</a>
+                </li>
+            </ul>
+            <ul class="rodape__lista">
+                <li class="rodape__lista-titulo">Acesso rápido</li>
+                <li class="rodape__lista-item">
+                    <img src="img/entrar.png" alt="Ícone de entrar na sua conta" class="rodape__imagem">
+                    <a class="rodape__lista-link">Entrar</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/criar-conta.png" alt="Ícone de criar uma nova conta" class="rodape__imagem">
+                    <a class="rodape__lista-link">Criar uma conta</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/promocao.png" alt="Ícone de promoções" class="rodape__imagem">
+                    <a class="rodape__lista-link">Promoções</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/whatsapp.png" alt="Ícone de comprar através do WhatsApp" class="rodape__imagem">
+                    <a class="rodape__lista-link">Compre por WhatsApp</a>
+                </li>
+                <li class="rodape__lista-item">
+                    <img src="img/preferencia.png" alt="Ícone de preferências de Cookies" class="rodape__imagem">
+                    <a class="rodape__lista-link">Preferências de Cookies</a>
+                </li>
+            </ul>
+        </footer>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            spaceBetween: 10,
+            slidesPerView: 2,
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+            },
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+</html>

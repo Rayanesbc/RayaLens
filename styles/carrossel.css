@@ -1,0 +1,220 @@
+.carrossel__titulo {
+    text-align: center;
+    color: var(--cor-secundaria);
+    font-size: 18px;
+    font-weight: 700;
+    padding: 1em;
+    text-transform: uppercase;
+    background-color: var(--cor-branca);
+}
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-button-prev, .swiper-button-next {
+    display: none;
+}
+
+.swiper-pagination {
+    position: initial;
+    margin: .5em 0;
+}
+
+.card {
+    background: var(--cor-branca);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    padding: 1em;
+    margin: 1em 2em;
+}
+
+.descricao__titulo {
+    font-weight: 700;
+    color: var(--cor-secundaria);
+}
+
+.descricao__titulo-oculos {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--cor-azul);
+    margin: 1em 0;
+}
+
+.descricao__texto {
+    color: var(--cor-preta);
+}
+
+.descricao__imagem {
+    width: 50%;
+}
+
+.card__descricao, .botoes {
+    display: flex;
+}
+
+.botoes {
+    padding-left: 1.5em;
+}
+
+.card__botoes {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1em;
+}
+
+.botoes__ancora {
+    font-weight: 700;
+    color: var(--cor-branca);
+    background-color: var(--cor-secundaria);
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+}
+
+.botoes__ancora:hover {
+    cursor: pointer;
+    background-color: var(--cor-preta);
+    transition: 1s;
+}
+
+.descricao__imagem-estrelas {
+    padding-bottom: 0.5em;
+}
+
+@media screen and (min-width: 1024px) {
+
+    .carrossel__titulo {
+        font-size: 26px;
+    }
+
+    .swiper {
+        width: 60%;
+        
+    }
+
+    .swiper-pagination {
+        padding: 1em 0 3em 1em;
+        margin: 0 auto;
+    }
+
+    .swiper-slide img {
+        width: 90%;
+        padding-left: 2em;
+    }
+    
+    .swiper-button-prev, .swiper-button-next {
+        display: block;
+        top: 60%;
+        color: transparent;
+    }
+
+    .swiper-button-prev::before {
+        content: "<";
+        color: var(--cor-branca);
+        font-size: 20px;
+        font-weight: 400;
+        background: var(--cor-gradiente);
+        border-radius: 50%;
+        padding: 20% 40%;
+        position: relative;
+        right: -20px;
+    }
+
+    .swiper-button-next::before {
+        content: ">";
+        color: var(--cor-branca);
+        font-size: 20px;
+        font-weight: 400;
+        background: var(--cor-gradiente);
+        border-radius: 50%;
+        padding: 20% 40%;
+        position: relative;
+        left: 5px;
+    }
+
+    .card {
+        width: 50%;
+        margin: 3em auto;
+        padding: 2em;
+    }
+
+    .descricao {
+        padding-right: 2em;
+    }
+
+    .descricao__texto {
+        line-height: 24px;
+    }
+
+    .descricao__imagem {
+        width: 30%;
+    }
+
+    .botoes__ancora {
+        width: 30%;
+    }
+}
+
+@media screen and (min-width: 1728px) {
+
+    .carrossel__titulo {
+        font-size: 32px;
+        padding-top: 2em;
+    }
+
+    .carrossel__container {
+        display: flex;
+        padding: 6vw 10vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .swiper {
+        width: 45%;
+    }
+
+    .card {
+        width: 40%;
+        margin: 0;
+        padding: 1em;
+    }
+
+    .card__descricao {
+        display: flex;
+        align-items: center;
+    }
+
+    .card__botoes {
+        padding-right: 1em;
+    }
+
+    .descricao {
+        padding-right: 1em;
+    }
+
+    .descricao__titulo {
+        font-size: 32px;
+        line-height: 48px;
+    }
+
+    .descricao__titulo-oculos {
+        line-height: 27px;
+    }
+
+    .descricao__imagem {
+        padding-right: 1em;
+        height: 180px;
+    }
+
+    .botoes {
+        padding-left: 0em;
+    }
+
+    .botoes__ancora {
+        width: 27%;
+    }
+
+}
